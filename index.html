@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator with Gauge</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.rawgit.com/bernii/gauge.js/master/dist/gauge.min.js"></script>
+</head>
+<body>
+<img id="img" src="https://www.cdc.gov/healthyweight/images/assessing/bmi-adult-fb-600x315.jpg?_=07167" alt="">
+<div id="calculator">
+    <h2>BMI Calculator</h2>
+
+    <p>
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="Enter your weight">
+    </p>
+
+    <p>
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" placeholder="Enter your height">
+    </p>
+
+    <p>
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    </p>
+
+    <div id="result"></div>
+    <canvas id="gauge"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
